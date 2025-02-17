@@ -47,3 +47,31 @@ fig2=px.histogram(
 )
 
 st.plotly_chart(fig2)
+
+input_df = pd.DataFrame(data, index=[0])
+input_penguins = pd.concat([input_df, X_raw], axis=0)
+
+with st.expander('Input features'):
+    st.write('**Input plugins**')
+    st.datafframe(input_df)
+    st.write('**Combined penguins data**')
+    st.dataframe(input_penguins)
+
+encode = ['island', 'sex']
+df.penguins = pd.get_dummies(input_penguins, prefix=encode)
+
+X = df_penguins[1:]
+input_row = df_penguins[:1]
+
+target_mapper = {'Adelie': 0, 'Chinstrap': 1, 'Gentoo': 2}
+def target_encode(val):
+    return target_mapper[val]
+
+y = y_raw.apply(target_encode)
+
+with st.expander('Data preparation'):
+    st.write('**Encoded X (input penguin)**')
+    st.dataframe(input_row)
+    st.write('**Encoded y **')
+    st.write(y)
+    
