@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.title('🎈 Tojikiston ba pesh')
+st.title('🎈 Streamlit test')
 
 st.write('Welcome 🌸🌸🌸🌸 !')
 
