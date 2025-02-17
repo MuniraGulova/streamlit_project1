@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title('🎈 Tojikiston ba pash')
+st.title('🎈 Tojikiston ba pesh')
 
 st.write('Welcome 🌸🌸🌸🌸 !')
 
@@ -16,3 +16,4 @@ with st.expander('Data'):
     st.write("y")
     y_row=df.species
     st.dataframe(X_row)
+
