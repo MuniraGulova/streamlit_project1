@@ -45,4 +45,5 @@ fig2=px.histogram(
     nbins=30,
     title='Distribution of Body Mass'
 )
+
 st.plotly_chart(fig2)
