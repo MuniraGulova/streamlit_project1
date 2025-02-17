@@ -34,7 +34,7 @@ fig = px.scatter(
     df,
     x='bill_length_mm',
     y = 'bill_depth_mm',
-    color='island'
+    color='island',
     title='Bill length vs. Bill Depth by Island'
 )
 st.plotly_chart(fig)
