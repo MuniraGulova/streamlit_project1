@@ -10,7 +10,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/pe
 
 with st.expander('Data'):
     st.write('X')
-    X_row = df.drop("spicies", exis=1)
+    X_row = df.drop("species", exis=1)
     st.dataframe(X_row)
 
     st.write("y")
