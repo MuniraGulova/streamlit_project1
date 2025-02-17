@@ -62,7 +62,7 @@ input_penguins = pd.concat([input_df, X_row], axis=0)
 
 with st.expander('Input features'):
     st.write('**Input plugins**')
-    st.datafframe(input_df)
+    st.dataframe(input_df)
     st.write('**Combined penguins data**')
     st.dataframe(input_penguins)
 
